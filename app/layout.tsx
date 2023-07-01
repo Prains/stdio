@@ -11,7 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className="bg-[#1E2327] transition-all">{children}</body>
+      <body className="font-text bg-[#1E2327] text-white transition-all">
+        {children}
+      </body>
     </html>
   );
 }
