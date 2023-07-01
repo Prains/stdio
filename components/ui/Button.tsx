@@ -3,7 +3,7 @@ import { Iui } from "@/utils/interfaces";
 
 type LinkButton = Iui & {
   href: string;
-  type?: "primary" | "secondary" | "full" | "small";
+  type?: "primary" | "secondary" | "full" | "small" | "rounded";
 };
 
 const Primary = ({ href, className, children }: LinkButton) => {
@@ -50,6 +50,17 @@ const Small = ({ href, className, children }: LinkButton) => {
   );
 };
 
+const Rounded = ({ href, className, children }: LinkButton) => {
+  return (
+    <Link
+      href={href}
+      className={`flex-center h-[125px] w-[125px] rounded-full bg-[#CF1585] text-[12px] font-medium uppercase text-zinc-100 transition-all hover:bg-[#F1F1F1] hover:text-neutral-800  md:h-[80px] md:font-bold ${className}`}
+    >
+      {children}
+    </Link>
+  );
+};
+
 const LinkButton = ({
   href,
   className,
@@ -74,6 +85,12 @@ const LinkButton = ({
         <Small href={href} className={className}>
           {children}
         </Small>
+      );
+    case "rounded":
+      return (
+        <Rounded href={href} className={className}>
+          {children}
+        </Rounded>
       );
     default:
       return (

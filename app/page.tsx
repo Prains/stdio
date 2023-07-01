@@ -1,5 +1,5 @@
-import LinkButton from "@/components/ui/Button";
+import Input from "@/components/ui/Input";
 
 export default function Home() {
-  return <LinkButton href="/">123</LinkButton>;
+  return <Input>123</Input>;
 }
