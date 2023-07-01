@@ -6,6 +6,14 @@
   @apply flex items-center justify-center;
 }
 
+.font-text {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.font-title {
+  font-family: "Days", sans-serif;
+}
+
 .flex-center-col {
   @apply flex-center flex-col;
 }
