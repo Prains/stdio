@@ -9,3 +9,34 @@
 .flex-center-col {
   @apply flex-center flex-col;
 }
+
+.text-hover {
+  @apply hover:text-pink-600;
+}
+
+.title {
+  @apply text-[24px] font-normal uppercase tracking-widest text-black md:text-[100px];
+}
+
+.subtitle {
+  @apply text-[20px] font-normal uppercase tracking-widest text-black md:text-[50px];
+}
+
+.text-main {
+  @apply text-[14px] font-normal
+  text-black
+  md:text-[18px];
+}
+
+.text-bold {
+  @apply text-[13px] font-medium uppercase
+  text-black
+  md:text-[22px]
+  md:font-bold;
+}
+
+.text-small {
+  @apply text-[12px] font-normal
+  text-black
+  md:text-[16px];
+}
