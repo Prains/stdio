@@ -5,3 +5,4 @@ export interface Iui {
   onClick?: Function;
   onChange?: Function;
 }
+
