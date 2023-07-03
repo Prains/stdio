@@ -3,7 +3,13 @@ import Overlay from "@/components/ui/Overlay";
 import { whiteCross } from "@/images/icons";
 import Image from "next/image";
 
-const Burger = ({ burgerShown, setBurgerShown }) => {
+const Burger = ({
+  burgerShown,
+  setBurgerShown,
+}: {
+  burgerShown: boolean;
+  setBurgerShown: Function;
+}) => {
   return (
     <Overlay>
       <ContentZone>
