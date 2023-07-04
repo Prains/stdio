@@ -6,9 +6,32 @@ import { burgerIcon } from "@/images/icons";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Burger from "./Burger/Burger";
+import { AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [burgerShown, setBurgerShown] = useState(false);
+  const menuList = [
+    {
+      name: "Наши проекты",
+      link: "/",
+    },
+    {
+      name: "Этапы работ",
+      link: "/",
+    },
+    {
+      name: "О нас",
+      link: "/",
+    },
+    {
+      name: "Почему мы",
+      link: "/",
+    },
+    {
+      name: "Отзывы",
+      link: "/",
+    },
+  ];
 
   return (
     <header>
@@ -26,7 +49,15 @@ const Header = () => {
           />
         </motion.div>
       </ContentZone>
-      {burgerShown && <Burger burgerShown={burgerShown} setBurgerShown={setBurgerShown} />}
+      <AnimatePresence>
+        {burgerShown && (
+          <Burger
+            burgerShown={burgerShown}
+            setBurgerShown={setBurgerShown}
+            menuList={menuList}
+          />
+        )}
+      </AnimatePresence>
     </header>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Iui } from "@/utils/interfaces";
+import { motion } from "framer-motion";
 
 const Overlay = ({ children }: Iui) => {
   useEffect(() => {
@@ -11,7 +12,14 @@ const Overlay = ({ children }: Iui) => {
   }, []);
 
   return (
-    <div className="absolute top-0 h-full w-full bg-black z-50">{children}</div>
+    <motion.div
+      className="absolute top-0 z-50 h-full w-full bg-black"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 100 }}
+      exit={{ opacity: 0 }}
+    >
+      {children}
+    </motion.div>
   );
 };
 
