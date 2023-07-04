@@ -7,7 +7,12 @@ module.exports = {
     "./images/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: ["Days, sans-serif"],
+        text: ["Ubuntu, sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

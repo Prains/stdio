@@ -63,6 +63,7 @@ const Burger = ({
                   key={index}
                   href={item.link}
                   setBurgerShown={setBurgerShown}
+                  target="_blank"
                 >
                   {item.name}
                 </BurgerLink>
