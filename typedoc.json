@@ -1,0 +1,20 @@
+{
+  "entryPoints": [
+    "./components/**/*.tsx",
+    "./app/**/*.tsx",
+    "./utils",
+    "./images"
+  ],
+  "out": "docs",
+  "name": "Документация webcultstudio.ru",
+  "exclude": [
+    "**/node_modules/**/*",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    ".next"
+  ],
+  "excludeExternals": true,
+  "excludePrivate": true
+}
