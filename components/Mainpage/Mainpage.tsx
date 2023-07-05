@@ -1,6 +1,7 @@
 import ContentZone from "../ui/ContentZone";
 import WhiteLine from "../ui/whiteLine";
 import CasesBlock from "./CasesBlock/CasesBlock";
+import FreeConsultationBlock from "./FreeConsultationBlock/FreeConsultationBlock";
 import LeadImageBlock from "./LeadImageBlock/LeadImageBlock";
 import LeadTextBlock from "./LeadTextBlock/LeadTextBlock";
 import MainBlock from "./MainBlock/MainBlock";
@@ -18,6 +19,7 @@ const MainpageComponent = () => {
         <LeadImageBlock />
         <WhiteLine />
         <WorkDescriptionBlock />
+        <FreeConsultationBlock />
       </ContentZone>
     </main>
   );

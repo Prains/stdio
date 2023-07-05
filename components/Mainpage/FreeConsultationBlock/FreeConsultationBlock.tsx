@@ -1,12 +1,19 @@
+import SendForm from "@/components/SendForm/SendForm";
 import { background } from "@/images/Mainpage/LeadImageBlock";
 
 const FreeConsultationBlock = () => {
   return (
     <section
       style={{
-        background: `url('${background.src}')`,
+        backgroundImage: `url('${background.src}')`,
       }}
-    ></section>
+      className="flex-center-col mt-10 gap-7"
+    >
+      <h3 className="subtitle w-[194px] text-center font-title md:w-[499px]">
+        бесплатная консультация
+      </h3>
+      <SendForm />
+    </section>
   );
 };
 
