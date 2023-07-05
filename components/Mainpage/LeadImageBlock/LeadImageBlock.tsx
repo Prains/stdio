@@ -1,5 +1,13 @@
+import { background } from "@/images/Mainpage/LeadImageBlock";
+
 const LeadImageBlock = () => {
-    return <p>123</p>;
-}
- 
+  return (
+    <section
+      style={{
+        backgroundImage: `url(${background.src})`,
+      }}
+    ></section>
+  );
+};
+
 export default LeadImageBlock;

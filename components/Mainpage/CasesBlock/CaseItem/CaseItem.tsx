@@ -19,15 +19,16 @@ const CaseItem = ({
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div className="relative h-[280px] w-[280px] md:h-[560px] md:w-[560px]">
-      <Image
-        src={image}
-        alt={`первый экран сайта ${title}`}
-        className="h-full w-full cursor-pointer object-cover"
+    <div className="relative h-[280px] w-full  md:h-[560px] md:w-[560px]">
+      <iframe src={adress} className="h-full w-full cursor-pointer bg-white" />
+      <p
+        className="text-main mt-2"
         onClick={() => {
-          setClicked(true);
+          setClicked(!clicked);
         }}
-      />
+      >
+        Подробнее
+      </p>
       <AnimatePresence>
         {clicked && (
           <motion.div
