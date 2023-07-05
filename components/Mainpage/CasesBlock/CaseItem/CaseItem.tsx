@@ -19,7 +19,7 @@ const CaseItem = ({
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div className="relative h-[280px] w-full  md:h-[560px] md:w-[560px]">
+    <div className="relative h-[280px] w-full  md:h-[560px] md:w-[1200px]">
       <iframe src={adress} className="h-full w-full cursor-pointer bg-white" />
       <p
         className="text-main mt-2"
