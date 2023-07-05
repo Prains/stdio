@@ -8,27 +8,27 @@ const CasesBlock = () => {
       image: friends,
       title: "Сайт фонда Друзья",
       description: "Создан в команде Яндекс.Практикум",
-      adress: "https://www.friendsfoundation.ru",
+      adress: "https://friendsfoundation.ru",
     },
     {
       image: deep,
       title: "Сайт cerebrus.ru",
       description:
         "Сайт психологического исследования. Содержит 15 психологических тестов, результаты интерпретируются после прохождения",
-      adress: "https://www.cerebrus.ru",
+      adress: "https://cerebrus.ru",
     },
     {
       image: thalia,
       title: "Сайт thaliastudio.ru",
       description:
         "Сайт вязальной мастерицы. Онлайн магазин с виртуальным каталогом",
-      adress: "https://www.thaliastudio.ru",
+      adress: "https://thaliastudio.ru",
     },
     {
       image: sansearch,
       title: "Сайт sansearch.ru",
       description: "Сайт по поиску юридических документов",
-      adress: "https://www.sansearch.ru",
+      adress: "https://sansearch.ru",
     },
   ];
 
