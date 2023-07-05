@@ -1,52 +1,53 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import CasesSlide from "./CasesSlide/CasesSlide";
-import { useState } from "react";
-import { text } from "node:stream/consumers";
+import CaseItem from "./CaseItem/CaseItem";
+import { friends, deep, thalia, sansearch } from "@/images/Mainpage/Cases";
 
 const CasesBlock = () => {
-  const casesTypes = [
+  const cases = [
     {
-      name: "Корпоративные сайты",
-      value: "corp",
+      image: friends,
+      title: "Сайт фонда Друзья",
+      description: "Создан в команде Яндекс.Практикум",
+      adress: "https://www.friendsfoundation.ru",
     },
     {
-      name: "Лендинги",
-      value: "land",
+      image: deep,
+      title: "Сайт cerebrus.ru",
+      description:
+        "Сайт психологического исследования. Содержит 15 психологических тестов, результаты интерпретируются после прохождения",
+      adress: "https://www.cerebrus.ru",
     },
     {
-      name: "Интернет-магазины",
-      value: "ig",
+      image: thalia,
+      title: "Сайт thaliastudio.ru",
+      description:
+        "Сайт вязальной мастерицы. Онлайн магазин с виртуальным каталогом",
+      adress: "https://www.thaliastudio.ru",
     },
     {
-      name: "Веб-приложения",
-      value: "ip",
+      image: sansearch,
+      title: "Сайт sansearch.ru",
+      description: "Сайт по поиску юридических документов",
+      adress: "https://www.sansearch.ru",
     },
   ];
-
-  /*   const cases = [[{ image, text, link }], [{ image, text, link }]]; */
-
-  const [currentSlide, setCurrentSlide] = useState(casesTypes[0].value);
 
   return (
     <section className="mb-10 mt-5">
       <p className="text-bold mb-7">свежие проекты студии</p>
-      <Swiper
-        slidesPerView={1.2}
-        onSlideChange={(swiper) => {
-          setCurrentSlide(casesTypes[swiper.activeIndex].value);
-        }}
-      >
-        {casesTypes.map((item, index) => {
+      <article className="flex-center flex-wrap gap-7">
+        {cases.map((item) => {
           return (
-            <SwiperSlide key={index}>
-              <CasesSlide {...item} currentSlide={currentSlide} />
-            </SwiperSlide>
+            <CaseItem
+              key={item.title}
+              image={item.image}
+              title={item.title}
+              description={item.description}
+              adress={item.adress}
+            />
           );
         })}
-      </Swiper>
-      <article></article>
+      </article>
     </section>
   );
 };
