@@ -4,6 +4,7 @@ import CasesBlock from "./CasesBlock/CasesBlock";
 import LeadImageBlock from "./LeadImageBlock/LeadImageBlock";
 import LeadTextBlock from "./LeadTextBlock/LeadTextBlock";
 import MainBlock from "./MainBlock/MainBlock";
+import WorkDescriptionBlock from "./WorkDescriptionBlock/WorkDescriptionBlock";
 
 const MainpageComponent = () => {
   return (
@@ -15,6 +16,8 @@ const MainpageComponent = () => {
         <WhiteLine />
         <CasesBlock />
         <LeadImageBlock />
+        <WhiteLine />
+        <WorkDescriptionBlock />
       </ContentZone>
     </main>
   );
