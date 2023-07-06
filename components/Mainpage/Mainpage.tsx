@@ -5,6 +5,7 @@ import FreeConsultationBlock from "./FreeConsultationBlock/FreeConsultationBlock
 import LeadImageBlock from "./LeadImageBlock/LeadImageBlock";
 import LeadTextBlock from "./LeadTextBlock/LeadTextBlock";
 import MainBlock from "./MainBlock/MainBlock";
+import ReviewsBlock from "./ReviewsBlock/ReviewsBlock";
 import WorkDescriptionBlock from "./WorkDescriptionBlock/WorkDescriptionBlock";
 
 const MainpageComponent = () => {
@@ -20,6 +21,8 @@ const MainpageComponent = () => {
         <WhiteLine />
         <WorkDescriptionBlock />
         <FreeConsultationBlock />
+        <WhiteLine />
+        <ReviewsBlock />
       </ContentZone>
     </main>
   );
