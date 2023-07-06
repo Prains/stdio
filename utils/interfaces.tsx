@@ -3,6 +3,6 @@ export interface Iui {
   children?: React.ReactNode;
   other?: any;
   onClick?: Function;
-  onChange?: Function;
+  onChange?: any;
 }
 

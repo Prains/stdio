@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-const useInput = (initial: any) => {
+const useInput = (initial: string) => {
   const [state, setState] = useState(initial);
-  const onChange = (e: any) => {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setState(e.target.value);
   };
   return [state, onChange];
