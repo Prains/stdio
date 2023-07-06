@@ -38,7 +38,7 @@ const ReviewsBlock = () => {
   ];
 
   return (
-    <section>
+    <section id="reviews">
       <p className="text-bold mb-5 mt-2">отзывы наших клиентов</p>
       <Swiper slidesPerView={1} spaceBetween={50}>
         {reviews.map((review) => {

@@ -33,7 +33,7 @@ const CasesBlock = () => {
   ];
 
   return (
-    <section className="mb-10 mt-5">
+    <section className="mb-10 mt-5" id="projects">
       <p className="text-bold mb-7">свежие проекты студии</p>
       <article className="flex-center flex-wrap gap-10">
         {cases.map((item) => {

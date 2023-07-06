@@ -3,7 +3,7 @@ import { tags } from "@/images/Mainpage/LeadTextBlock";
 
 const LeadTextBlock = () => {
   return (
-    <section className="mb-10 mt-5 flex flex-col gap-5 md:flex-row md:items-start md:justify-center md:gap-[251px]">
+    <section className="mb-10 mt-5 flex flex-col gap-5 md:flex-row md:items-start md:justify-center md:gap-[251px]" id="about">
       <h2 className="text-bold lg:min-w-max">ваша задача - наше решение</h2>
       <div className="flex flex-col gap-10">
         <p className="text-main">

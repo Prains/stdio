@@ -25,7 +25,7 @@ const WorkDescriptionBlock = () => {
   ];
 
   return (
-    <section className="mb-10 mt-2 flex flex-col gap-5">
+    <section className="mb-10 mt-2 flex flex-col gap-5" id="stages">
       <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
         <p className="text-bold">этапы работ</p>
         <p className="text-main md:max-w-[480px] lg:mr-20">

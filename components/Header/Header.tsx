@@ -13,23 +13,23 @@ const Header = () => {
   const menuList = [
     {
       name: "Наши проекты",
-      link: "/",
+      link: "/#projects",
     },
     {
       name: "Этапы работ",
-      link: "/",
+      link: "/#stages",
     },
     {
       name: "О нас",
-      link: "/",
+      link: "/#about",
     },
     {
       name: "Почему мы",
-      link: "/",
+      link: "/#why",
     },
     {
       name: "Отзывы",
-      link: "/",
+      link: "/#reviews",
     },
   ];
 
