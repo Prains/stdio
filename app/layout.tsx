@@ -9,14 +9,17 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  popups,
 }: {
   children: React.ReactNode;
+  popups: any;
 }) {
   return (
     <html lang="ru">
       <body className="bg-[#1E2327] font-text text-white transition-all">
         <Header />
         {children}
+        {popups}
         <Footer />
       </body>
     </html>
